@@ -25,8 +25,8 @@ public class BaseSetup {
     @BeforeAll
     static void config() {
         web = System.getProperty("web", "local");
-        config = ConfigFactory.create(WebConfig.class, System.getProperties());
-        remoteConfig = ConfigFactory.create(RemoteConfig.class, System.getProperties());
+        config = ConfigFactory.create(WebConfig.class);
+        remoteConfig = ConfigFactory.create(RemoteConfig.class);
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.browser = config.browserName();
         Configuration.browserVersion = config.browserVersion();
