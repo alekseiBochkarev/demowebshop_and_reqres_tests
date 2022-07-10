@@ -10,6 +10,7 @@ import io.restassured.RestAssured;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
@@ -28,19 +29,22 @@ public class BaseSetup {
         config = ConfigFactory.create(WebConfig.class);
         remoteConfig = ConfigFactory.create(RemoteConfig.class);
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+        if (web.equals("remote")) {
+            Configuration.remote = "https://" + remoteConfig.remoteUser() + ":"
+                    + remoteConfig.remotePassword() + "@" + remoteConfig.remoteUrl() + "/wd/hub";
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("enableVNC", true);
+            capabilities.setCapability("enableVideo", true);
+            Configuration.browserCapabilities = capabilities;
+        }
         Configuration.browser = config.browserName();
-        Configuration.browserVersion = config.browserVersion();
         Configuration.browserSize = config.browserSize();
         Configuration.baseUrl = config.urlWeb();
         RestAssured.baseURI = config.urlApi();
         //Configuration.holdBrowserOpen = true;
         login = config.userLogin();
         password = config.userPassword();
-         rememberMe = config.rememberMe();
-        if (web.equals("remote")) {
-            Configuration.remote = ("https://" + remoteConfig.remoteUser() + ":"
-                    + remoteConfig.remotePassword() + "@" + remoteConfig.remoteUrl());
-        }
+        rememberMe = config.rememberMe();
     }
 
     @AfterEach

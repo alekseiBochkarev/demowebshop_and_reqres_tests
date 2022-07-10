@@ -10,10 +10,6 @@ public interface WebConfig extends Config {
     @DefaultValue("CHROME")
     String browserName();
 
-    @Key("browser.version")
-    @DefaultValue("101")
-    String browserVersion();
-
     @Key("browser.size")
     @DefaultValue("1200x800")
     String browserSize();

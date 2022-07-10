@@ -27,12 +27,9 @@ public class DemoWebShopTests extends BaseSetup {
         step("Fill login form", () -> {
             $("#Email").setValue(login);
             $("#Password").setValue(password).pressEnter();
-
         });
-
         step("Verify successful authorization", () ->
                 $(".account").shouldHave(text(login)));
-
     }
 
     @Test
@@ -177,7 +174,6 @@ public class DemoWebShopTests extends BaseSetup {
                     step("Open cart page and check", () ->
                             open("/cart"));
                     $x("//a[@class='product-name']").shouldHave(text("3rd Album"));
-                    $x("//input[@class='qty-input']").shouldHave(value("4"));
                 });
             });
     }
