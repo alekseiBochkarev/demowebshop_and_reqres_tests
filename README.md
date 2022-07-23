@@ -74,7 +74,7 @@ gradle clean test -Dweb=remote
 
 ## :robot: Отчет в Telegram
 <p align="center">
-<img title="Telegram notification message" src="images/telegramReport.png">
+<img title="Telegram notification message" src="images/telegramrest.png">
 </p>
 
 ## :film_projector: Видео пример прохождения тестов
