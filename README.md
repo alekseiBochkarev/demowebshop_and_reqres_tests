@@ -9,7 +9,6 @@
 - <a href="#notebook_with_decorative_cover-реализованные-проверки">Реализованные проверки</a>
 - <a href="#arrow_forward-запуск-из-терминала">Запуск из терминала</a>
 - <a href="#electric_plug-сборка-в-Jenkins">Сборка в Jenkins</a>
-- <a href="#👽-отчет-browserstack">Отчет BrowserStack</a>
 - <a href="#open_book-allure-отчет">Allure отчет</a>
 - <a href="#hammer-allure-test-ops-отчет">Allure Test Ops отчет</a>
 - <a href="#robot-отчет-в-telegram">Отчет в Telegram</a>
@@ -50,21 +49,22 @@ gradle clean test -Dweb=remote
 <img title="Jenkins Dashboard" src="images/jenkinsrest.png">
 </p>  
 
-## 👽 Отчет BrowserStack
-Подробности прохождения тестов мы можем увидеть в личном кабинете BrowserStack.
-Часто это дает полезную информацию о работе нашего приложения.
-<img title="BrowserStack dashboard" src="images/browserstack.png">
-
 ## :open_book: Allure отчет
 - ### Стартовая страница отчета
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/allureMain.png">
+<img title="Allure Overview Dashboard" src="images/allureRest.png">
 </p>
 
 - ### Страница с проведенными тестами
 <p align="center">
-<img title="Allure Test Page" src="images/allureSuites.png">
+<img title="Allure Test Page" src="images/allureRestsuites.png">
 </p>
+
+- ### Страница с диаграммами
+<p align="center">
+<img title="Allure Diagram Page" src="images/allreRestgraphs.png">
+</p>
+
 
 ## :hammer: Allure Test Ops отчет
 <p align="center">
