@@ -47,7 +47,7 @@ gradle clean test -Dweb=remote
 ## :electric_plug: Сборка в Jenkins
 ##### <a target="_blank" href="https://jenkins.autotests.cloud/view/C12-BochkarevAlexej/job/C12-BochkarevAlexej-lesson22-mobile-tests/">Сборка в Jenkins</a>
 <p align="center">
-<img title="Jenkins Dashboard" src="images/jenkinsbuild.png">
+<img title="Jenkins Dashboard" src="images/jenkinsrest.png">
 </p>  
 
 ## 👽 Отчет BrowserStack
