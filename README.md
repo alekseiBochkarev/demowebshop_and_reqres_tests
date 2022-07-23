@@ -37,11 +37,11 @@
 ## :arrow_forward: Запуск из терминала
 Локальный запуск:
 ```
-gradle clean test -Denv=local
+gradle clean test -Dweb=local
 ```
 Запуск в Browserstack:
 ```
-gradle clean test -Denv=browserstack
+gradle clean test -Dweb=remote
 ```
 
 ## :electric_plug: Сборка в Jenkins
