@@ -68,8 +68,8 @@ gradle clean test -Dweb=remote
 
 ## :hammer: Allure Test Ops отчет
 <p align="center">
-<img title="Allure Test Ops Launch" src="images/allureTestOps.png">
-<img title="Allure Test Ops Dashboard" src="images/allureTestOps2.png">
+<img title="Allure Test Ops Launch" src="images/allureTestOpsLaunchRest.png">
+<img title="Allure Test Ops Dashboard" src="images/allureTODashboard.png">
 </p>
 
 ## :robot: Отчет в Telegram
@@ -80,5 +80,5 @@ gradle clean test -Dweb=remote
 ## :film_projector: Видео пример прохождения тестов
 > К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
 <p align="center">
-  <img title="Browserstack Video" src="images/gif/alluretestvideo.gif">
+  <img title="Browserstack Video" src="images/gif/shopVideo.gif">
 </p>
