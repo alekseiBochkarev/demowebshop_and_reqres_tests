@@ -44,3 +44,4 @@ target/
 /gradlew.bat
 
 !allure-notifications-4.1.jar
+!images/
