@@ -59,7 +59,7 @@ gradle clean test -Dweb=remote
 ## :open_book: Allure отчет
 - ### Стартовая страница отчета
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/allureRest.png">
+<img title="Allure Overview Dashboard" src="images/allureOverview.png">
 </p>
 
 - ### Страница с проведенными тестами
