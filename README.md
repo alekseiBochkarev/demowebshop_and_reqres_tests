@@ -76,7 +76,7 @@ gradle clean test -Dweb=remote
 ## :hammer: Allure Test Ops отчет
 <p align="center">
 <img title="Allure Test Ops Launch" src="images/allureTestOpsLaunchRest.png">
-<img title="Allure Test Ops Dashboard" src="images/allureTODashboard.png">
+<img title="Allure Test Ops Dashboard" src="images/allureTORest.png">
 </p>
 
 ## :robot: Отчет в Telegram
