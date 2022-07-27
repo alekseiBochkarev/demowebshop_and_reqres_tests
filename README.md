@@ -1,7 +1,9 @@
-# Проект по автоматизации тестирования API магазина "Demowebshop"
-<img title="Wiki img" src="images/demowebshop.png">
+# Проект по автоматизации тестирования API магазина "Demowebshop" и рест-сервиса "Reqres.in"
+<img title="demowebshop img" src="images/demowebshop.png">
+<img title="reqres img" src="images/reqresIn.png">
 
 #### <a target="_blank" href="http://demowebshop.tricentis.com/">Ссылка на сайт магазина</a>
+#### <a target="_blank" href="https://reqres.in/">Ссылка на сайт сервиса</a>
 
 
 ## :floppy_disk: Содержание:
@@ -32,6 +34,11 @@
 ## :notebook_with_decorative_cover: Реализованные проверки
 - Проверка авторизации
 - Проверка добавления товара в корзину
+- Проверка рест запроса на получение списка пользователей
+- Проверка рест запроса на получение пользователя
+- Негативная проверка рест запроса на получение пользователя
+- Проверка рест запроса на создание сущности
+- Проверка рест запроса на обновление сущности
 
 ## :arrow_forward: Запуск из терминала
 Локальный запуск:
