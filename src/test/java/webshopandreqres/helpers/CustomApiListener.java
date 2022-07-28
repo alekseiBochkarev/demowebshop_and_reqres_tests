@@ -1,4 +1,4 @@
-package bochkarev.helpers;
+package webshopandreqres.helpers;
 
 import io.qameta.allure.restassured.AllureRestAssured;
 

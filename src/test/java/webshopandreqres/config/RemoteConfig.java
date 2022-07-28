@@ -1,4 +1,4 @@
-package bochkarev.config;
+package webshopandreqres.config;
 
 import org.aeonbits.owner.Config;
 
@@ -8,11 +8,9 @@ import org.aeonbits.owner.Config;
 public interface RemoteConfig extends Config {
 
     @Key("remoteUser")
-    @DefaultValue("user1")
     String remoteUser();
 
     @Key("remotePassword")
-    @DefaultValue("1234")
     String remotePassword();
 
     @Key("remote.URL")

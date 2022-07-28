@@ -1,8 +1,8 @@
 # Проект по автоматизации тестирования API магазина "Demowebshop" и рест-сервиса "Reqres.in"
-<img title="demowebshop img" src="images/demowebshop.png">
+<img title="webshopandreqres img" src="images/demowebshop.png">
 <img title="reqres img" src="images/reqresIn.png">
 
-#### <a target="_blank" href="http://demowebshop.tricentis.com/">Ссылка на сайт магазина</a>
+#### <a target="_blank" href="http://webshopandreqres.tricentis.com/">Ссылка на сайт магазина</a>
 #### <a target="_blank" href="https://reqres.in/">Ссылка на сайт сервиса</a>
 
 

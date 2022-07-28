@@ -1,8 +1,8 @@
-package bochkarev.base;
+package webshopandreqres.base;
 
-import bochkarev.config.RemoteConfig;
-import bochkarev.config.WebConfig;
-import bochkarev.helpers.AllureAttachments;
+import webshopandreqres.config.RemoteConfig;
+import webshopandreqres.config.WebConfig;
+import webshopandreqres.helpers.AllureAttachments;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -25,10 +25,14 @@ public class BaseSetup {
 
     @BeforeAll
     static void config() {
+        initEnvVars();
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+    }
+
+    static void initEnvVars() {
         web = System.getProperty("web", "local");
         config = ConfigFactory.create(WebConfig.class);
         remoteConfig = ConfigFactory.create(RemoteConfig.class);
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         if (web.equals("remote")) {
             Configuration.remote = "https://" + remoteConfig.remoteUser() + ":"
                     + remoteConfig.remotePassword() + "@" + remoteConfig.remoteUrl() + "/wd/hub";
@@ -56,7 +60,6 @@ public class BaseSetup {
         if (web.equals("remote")) {
             AllureAttachments.addVideo();
         }
-
         closeWebDriver();
     }
 }

@@ -1,20 +1,21 @@
-package bochkarev.tests;
+package webshopandreqres.tests;
 
-import bochkarev.model.ListUser;
-import bochkarev.model.User;
-import bochkarev.model.UserData;
+import webshopandreqres.model.ListUser;
+import webshopandreqres.model.User;
+import webshopandreqres.model.UserData;
 import io.qameta.allure.AllureId;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
 
-import static bochkarev.base.Specs.*;
+import static webshopandreqres.base.Specs.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.hasItem;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
+@SuppressWarnings("unchecked")
 public class ReqresInTests {
 
     @Test

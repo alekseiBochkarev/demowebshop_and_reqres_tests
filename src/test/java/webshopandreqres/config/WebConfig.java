@@ -1,4 +1,4 @@
-package bochkarev.config;
+package webshopandreqres.config;
 
 import org.aeonbits.owner.Config;
 
@@ -23,11 +23,9 @@ public interface WebConfig extends Config {
     String urlApi();
 
     @Key("userLogin")
-    @DefaultValue("qaguru@qa.guru")
     String userLogin();
 
     @Key("userPassword")
-    @DefaultValue("qaguru@qa.guru1")
     String userPassword();
 
     @Key("rememberMe")
